@@ -3,13 +3,11 @@ import "./App.css";
 import Counter from "./components/Counter";
 import CounterBy2 from "./components/CounterBy2";
 import CounterBy5 from "./components/CounterBy5";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 
 function App() {
   const [showCounter2, setShowCounter2] = useState(false);
   const [showCounter3, setShowCounter3] = useState(false);
-
-  const store = useSelector((state) => state?.value);
   const dispatch = useDispatch();
 
   var clicked = 1;

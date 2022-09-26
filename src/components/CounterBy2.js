@@ -3,17 +3,14 @@ import { useDispatch, useSelector } from "react-redux";
 
 const CounterBy2 = () => {
   const store = useSelector((state) => state?.value2);
-  console.log("Store 2 ", store);
   const dispatch = useDispatch();
 
   const handleIncrementByThree = () => {
-    // console.log("Store: ",store.value);
     dispatch({
       type: "INCREMENT_BY_THREE",
     });
   };
   const handleDecrementByTwo = () => {
-    // console.log("Store: ",store.value);
     dispatch({
       type: "DECREMENT_BY_TWO",
     });
